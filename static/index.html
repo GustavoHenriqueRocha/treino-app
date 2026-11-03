@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#111418">
+<title>Treino</title>
+<link rel="manifest" href="manifest.json">
+<link rel="icon" href="icon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="topo">
+  <button id="btn-perfil" class="perfil-chip" aria-label="Trocar perfil"><span id="perfil-nome">Perfil</span> ▾</button>
+  <span id="status-sync" class="sync" title="Sincronização"></span>
+  <button id="btn-menu" class="icone" aria-label="Menu">⋮</button>
+</header>
+
+<main id="conteudo"></main>
+
+<div id="timer" class="timer oculto">
+  <span>Descanso</span><strong id="timer-tempo">0:00</strong>
+  <button data-timer="-15">−15</button><button data-timer="15">+15</button><button data-timer="0">Pular</button>
+</div>
+
+<nav class="abas">
+  <button data-aba="treinar" class="ativa"><span>🏋️</span>Treinar</button>
+  <button data-aba="progresso"><span>📈</span>Progresso</button>
+  <button data-aba="corpo"><span>⚖️</span>Corpo</button>
+  <button data-aba="exercicios"><span>📚</span>Exercícios</button>
+  <button data-aba="guia"><span>💡</span>Guia</button>
+</nav>
+
+<dialog id="modal"><div id="modal-corpo"></div></dialog>
+
+<script src="vendor/chart.umd.min.js"></script>
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

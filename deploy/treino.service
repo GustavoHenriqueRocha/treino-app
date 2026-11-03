@@ -1,0 +1,13 @@
+[Unit]
+Description=App de treino (servidor local, sincroniza com o Ryzen)
+After=network-online.target
+
+[Service]
+WorkingDirectory=%h/projetos/treino-app
+Environment=TREINO_PEER=http://100.98.151.43:8790
+ExecStart=/usr/bin/python3 %h/projetos/treino-app/server.py
+Restart=on-failure
+RestartSec=5
+
+[Install]
+WantedBy=default.target
