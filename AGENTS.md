@@ -11,7 +11,7 @@ estático em `static/`.
 - Check rápido:     `python3 -m py_compile server.py && node --check static/app.js && node --check static/data.js`
                     (não há testes ainda)
 - Serviço no Arch:  `systemctl --user status treino` (unidade em `deploy/treino.service`)
-- Deploy no Ryzen:  `deploy\instalar-windows.ps1` como admin (instalado em `C:\Users\Flavin\treino-app`,
+- Deploy no Ryzen:  `deploy\instalar-windows.ps1` como admin (instalado em `%USERPROFILE%\treino-app`,
                     tarefa "Treino" como SYSTEM na inicialização, firewall 8790)
 
 ## Mapa
